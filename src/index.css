@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1); /* Set the white text shadow with 0.7 opacity */
+}
+
+.text-shadow2 {
+  color: #c5b159; /* Set the text color */
+  text-shadow: 2px 2px 2px rgb(255, 255, 255); /* Set the white text shadow with 0.7 opacity */
+}
+
+.bg-custom-gradient {
+  background: linear-gradient(to right, #2b2a26 0%, black 100%);
+}
+
+.bg-custom-gradient2 {
+  background: linear-gradient(to right, black 0%, #2b2a26 100%);
+}
+
+@layer components {
+  .max-container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 19px;
+  }
+
+  @layer utilities {
+    .info-text {
+      @apply font-poppins text-neutral-300 text-lg leading-7 tracking-wide;
+    }
+  }
+}
