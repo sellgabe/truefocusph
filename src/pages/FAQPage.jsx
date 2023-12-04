@@ -6,7 +6,7 @@ const FAQPage = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="bg-custom-gradient font-poppins h-[43.4rem]">
+    <div className="bg-custom-gradient font-poppins min-h-[43.4rem]">
       <div className="text-white max-container text-center py-12">
         <p className="uppercase text-6xl max-sm:text-4xl font-semibold ">
           FREQUENTLY ASKED <span className="text-custom-gold"> QUESTIONS </span>

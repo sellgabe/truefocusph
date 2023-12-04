@@ -20,10 +20,10 @@ const Nav = () => {
             <img
               src={headerLogo}
               alt="Logo"
-              className="m-0 w-[100px] h-[100px]"
+              className="m-0 w-[100px] h-[110px] p-3 pl-6"
             />
           </Link>
-          <ul className="flex-1 flex justify-end items-center gap-8 max-lg:hidden">
+          <ul className="flex-1 flex justify-end items-center font-semibold gap-8 max-lg:hidden">
             {navLinks.map((item) => (
               <li key={item.name}>
                 <Link

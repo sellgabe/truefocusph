@@ -19,7 +19,6 @@ const CoachAccordion = ({ coachAccordion }) => {
         <img
           className="bg-banner4 h-[10rem] w-[10rem] bg-cover bg-center rounded-full "
           placeholder="head coach image"
-          loading="lazy"
           role="presentation"
           sizes="(max-width: 800px) 100vw, 59vw"
           decoding="async"

@@ -13,7 +13,7 @@ export const navLinks = [
 
 export const banner = {
   title1: 'TrueFocus: Basketball Skills Development',
-  title2: 'Real Training Real Results',
+  title2: 'Real Training, Real Results',
   title3:
     'We deliver intense basketball training in a vibrant and welcoming environment, where serious skills development meets the joy of the game.',
   textBtn: 'Contact Us',
@@ -40,26 +40,27 @@ export const offerings = {
 export const trainWithUs = {
   title1: 'Elevate Your Game with TrueFocus',
   title2:
-    'Interested in sharpening your skills, boosting performance, and enhancing your focus for the game? Reach out and connect with TrueFocus.',
-  title3: 'Open for groups and individuals',
+    'Interested in sharpening your skills, boosting performance, and enhancing your focus for the game?',
+  title3: 'Reach out and connect with TrueFocus.',
+  title4: 'Open for groups and individuals',
 };
 
 export const locations = [
-  {
-    name: 'New Intramuros Village, Quezon City ',
-    href: 'https://maps.app.goo.gl/eQMS6R7AVQyVBX5P7?g_st=ic',
-  },
   {
     name: 'Fitness Army, Quezon City',
     href: 'https://maps.app.goo.gl/FxKb8dJFvk64hEYe8?g_st=ic',
   },
   {
-    name: '3X3 Paco Arena, Paco, Manila',
-    href: 'https://maps.app.goo.gl/1utvQtiUj4VHZPgGA?g_st=ic',
+    name: 'New Intramuros Village, Quezon City ',
+    href: 'https://maps.app.goo.gl/eQMS6R7AVQyVBX5P7?g_st=ic',
   },
   {
     name: 'GoodWill 2, Sucat, Paranaque',
     href: 'https://maps.app.goo.gl/UBUs3zUCqbeXRsQz7?g_st=ic',
+  },
+  {
+    name: '3X3 Paco Arena, Paco, Manila',
+    href: 'https://maps.app.goo.gl/1utvQtiUj4VHZPgGA?g_st=ic',
   },
   {
     name: 'Royale Estate Indoor Basketball Court, Las Piñas City',
@@ -166,12 +167,12 @@ export const footerLinks = [
     ],
   },
   {
-    title: 'Get in touch',
+    title: 'Contact Us',
     links: [
       {
         name: 'truefocus.opc@gmail.com',
       },
-      { name: '+63 (917)-891-2941' },
+      { name: '+63 917-891-2941' },
     ],
   },
 ];

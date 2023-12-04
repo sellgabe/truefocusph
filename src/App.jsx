@@ -1,9 +1,8 @@
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-
+import { Route, Routes } from 'react-router-dom';
 import FrontPage from './pages/FrontPage';
 import Coaches from './pages/Coaches';
-import { Route, Routes } from 'react-router-dom';
 import Nav from './components/Nav';
 import About from './pages/About';
 import TrainWithUsPage from './pages/TrainWithUsPage';

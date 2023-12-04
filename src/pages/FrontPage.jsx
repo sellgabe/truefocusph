@@ -17,7 +17,7 @@ const FrontPage = () => {
               data-aos-delay="500"
             >
               <div className="text-white text-5xl mb-8 max-sm:text-3xl">
-                <p className="mb-6">{title1}</p>
+                <p className="mb-6 font-semibold">{title1}</p>
                 <p className="text-custom-gold text-3xl  max-sm:text-xl max-sm:max-w-[155px]">
                   {title2}
                 </p>
@@ -43,8 +43,8 @@ const FrontPage = () => {
       <div className="bg-custom-black h-full font-poppins py-12">
         <div className="max-container flex flex-col gap-8">
           <div className="w-full text-center">
-            <p className="uppercase text-white text-4xl font-bold max-sm:text-2xl">
-              Currently <span className="text-custom-gold">Offering</span>
+            <p className="uppercase text-white text-4xl font-bold max-sm:text-3xl">
+              Our <span className="text-custom-gold">Services</span>
             </p>
           </div>
           <ul className="flex gap-8 max-lg:flex-col">

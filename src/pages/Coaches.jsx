@@ -17,7 +17,11 @@ const Coaches = () => {
     <div className="bg-custom-gradient">
       <div className="text-white font-poppins max-container text-center flex flex-col gap-4 py-12 ">
         <p className="uppercase text-6xl max-sm:text-4xl font-semibold">
-          TRUEFOCUS <span className="text-custom-gold"> TRAINING STAFF </span>
+          TRUEFOCUS{' '}
+          <span className="text-custom-gold whitespace-nowrap">
+            {' '}
+            TRAINING STAFF{' '}
+          </span>
         </p>
 
         <div className="flex flex-col gap-8">
