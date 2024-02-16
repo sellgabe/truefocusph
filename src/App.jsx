@@ -1,29 +1,61 @@
-import Aos from 'aos';
-import 'aos/dist/aos.css';
+import { Suspense, lazy } from 'react';
 import { Route, Routes } from 'react-router-dom';
-import FrontPage from './pages/FrontPage';
-import Coaches from './pages/Coaches';
 import Nav from './components/Nav';
-import About from './pages/About';
-import TrainWithUsPage from './pages/TrainWithUsPage';
-import FAQPage from './pages/FAQPage';
 import Footer from './components/Footer';
 
-export default function App() {
-  Aos.init({
-    duration: 2500,
-    delay: 200,
-  });
+const FrontPage = lazy(() => import('./pages/FrontPage'));
+// const Coaches = lazy(() => import('./pages/Coaches'));
+const About = lazy(() => import('./pages/About'));
+const TrainWithUsPage = lazy(() => import('./pages/TrainWithUsPage'));
+const FAQPage = lazy(() => import('./pages/FAQPage'));
 
+const LoadingFallback = () => <div className="w-full h-full bg-black"></div>;
+
+export default function App() {
   return (
     <>
       <Nav />
       <Routes>
-        <Route path="/" element={<FrontPage />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/coaches" element={<Coaches />} />
-        <Route path="/trainwithus" element={<TrainWithUsPage />} />
-        <Route path="/faqs" element={<FAQPage />} />
+        <Route
+          path="/"
+          element={
+            <Suspense fallback={<LoadingFallback />}>
+              <FrontPage />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/about"
+          element={
+            <Suspense fallback={<LoadingFallback />}>
+              <About />
+            </Suspense>
+          }
+        />
+        {/* <Route
+          path="/coaches"
+          element={
+            <Suspense fallback={<LoadingFallback />}>
+              <Coaches />
+            </Suspense>
+          }
+        /> */}
+        <Route
+          path="/trainwithus"
+          element={
+            <Suspense fallback={<LoadingFallback />}>
+              <TrainWithUsPage />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/faqs"
+          element={
+            <Suspense fallback={<LoadingFallback />}>
+              <FAQPage />
+            </Suspense>
+          }
+        />
       </Routes>
       <Footer />
     </>

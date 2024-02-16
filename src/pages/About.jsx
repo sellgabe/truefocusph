@@ -4,8 +4,8 @@ const About = () => {
   return (
     <div className="font-poppins">
       <div className="font-semibold h-[43.7rem]">
-        <div className="w-full h-full bg-top bg-cover bg-banner3 bg-no-repeat text-white flex justify-center relative">
-          <div className="max-container text-center items-center justify-center flex flex-col uppercase gap-12">
+        <div className="w-full h-full bg-top bg-cover bg-banner3 bg-no-repeat text-white flex relative">
+          <div className="max-container text-center justify-center flex flex-col uppercase gap-12">
             <p className="text-shadow text-6xl max-sm:text-4xl">
               Welcome to <span className="text-custom-gold">TrueFocus </span>
               Basketball Skills Development

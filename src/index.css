@@ -12,12 +12,12 @@
 }
 
 .text-shadow {
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1); /* Set the white text shadow with 0.7 opacity */
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 .text-shadow2 {
   color: #c5b159; /* Set the text color */
-  text-shadow: 2px 2px 2px rgb(255, 255, 255); /* Set the white text shadow with 0.7 opacity */
+  text-shadow: 2px 2px 2px rgb(255, 255, 255);
 }
 
 .bg-custom-gradient {
@@ -26,6 +26,36 @@
 
 .bg-custom-gradient2 {
   background: linear-gradient(to right, black 0%, #2b2a26 100%);
+}
+
+.bg-custom-gradient3 {
+  background: linear-gradient(
+    to bottom,
+    rgb(39, 39, 39) 0%,
+    rgba(22, 22, 22, 1) 100%
+  );
+}
+
+@keyframes changeBackground {
+  0% {
+    background-image: url('../src/assets/images/tf3.jpg');
+  }
+  25% {
+    background-image: url('../src/assets/images/tf4.jpg');
+  }
+  50% {
+    background-image: url('../src/assets/images/tf5.jpg');
+  }
+  75% {
+    background-image: url('../src/assets/images/tf8.jpg');
+  }
+  100% {
+    background-image: url('../src/assets/images/tf3.jpg');
+  }
+}
+
+.changing-background {
+  animation: changeBackground 24s ease-in-out infinite;
 }
 
 @layer components {

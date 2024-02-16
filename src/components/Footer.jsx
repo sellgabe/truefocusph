@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import { footerLogo } from '../assets/images';
 import { headerLogo } from '../assets/images';
 import { footerLinks } from '../data';
 import { socialMedia } from '../data';

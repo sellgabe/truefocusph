@@ -14,13 +14,14 @@ const Nav = () => {
 
   return (
     <>
-      <div className="relative top-0 z-50 w-full bg-[rgba(22,22,22,1)]">
+      <div className="relative top-0 z-50 w-full bg-black">
         <div className="flex justify-between py-1 items-center max-container pl-2 text-white">
           <Link to="/">
             <img
               src={headerLogo}
               alt="Logo"
               className="m-0 w-[100px] h-[110px] p-3 pl-6"
+              loading="lazy"
             />
           </Link>
           <ul className="flex-1 flex justify-end items-center font-semibold gap-8 max-lg:hidden">
@@ -35,7 +36,7 @@ const Nav = () => {
               </li>
             ))}
           </ul>
-          <div className="hidden max-lg:block">
+          <div className="hidden max-lg:block cursor-pointer">
             <img
               src={hamburger}
               alt="hamburger icon"
@@ -48,7 +49,7 @@ const Nav = () => {
       </div>
 
       {navMobile && (
-        <div className="relative h-full bg-custom-black text-white z-50 hidden max-lg:block">
+        <div className="relative h-full bg-black text-white z-50 hidden max-lg:block">
           <ul className="flex flex-col">
             {navLinks.map((item) => (
               <li

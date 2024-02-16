@@ -1,12 +1,11 @@
 import { facebook } from './assets/icons';
 import { instagram } from './assets/icons';
-import { twitter } from './assets/icons';
 import { tiktok } from './assets/icons';
 
 export const navLinks = [
   { name: 'Home', href: '' },
   { name: 'About', href: 'about' },
-  { name: 'Coaches', href: '/coaches' },
+  // { name: 'Coaches', href: '/coaches' },
   { name: 'Train With Us', href: 'trainwithus' },
   { name: 'FAQ', href: 'faqs' },
 ];

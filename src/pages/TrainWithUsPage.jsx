@@ -28,9 +28,9 @@ const TrainWithUsPage = () => {
         </div>
       </div>
 
-      <div className="bg-neutral-800">
+      <div className="bg-custom-black">
         <div className=" flex max-container justify-evenly max-sm:flex-col max-sm:items-center">
-          <div className=" flex justify-start gap-8 pt-16 flex-col">
+          <div className=" flex justify-start gap-8 pt-12 flex-col">
             <div className="flex items-center gap-8 max-sm:flex-col max-sm:text-center max-sm:gap-2">
               <div>
                 <FontAwesomeIcon
@@ -151,7 +151,7 @@ const TrainWithUsPage = () => {
         </div>
       </div>
 
-      <div className="bg-custom-black text-white">
+      <div className="bg-neutral-800 text-white">
         <div className="max-container flex flex-col justify-center items-center py-12">
           <p className="uppercase text-4xl font-semibold mb-4 max-sm:text-2xl">
             Our <span className="text-custom-gold">Locations</span>
@@ -161,7 +161,7 @@ const TrainWithUsPage = () => {
               <li
                 className={`text-xl p-2 mx-6 text-neutral-300 max-sm:text-base ${
                   index === locations.length - 1 && locations.length % 2 !== 0
-                    ? 'md:col-span-2'
+                    ? 'sm:col-span-2 '
                     : ''
                 }`}
                 key={item.name}

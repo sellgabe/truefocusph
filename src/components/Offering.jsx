@@ -1,7 +1,7 @@
 import { offerings } from '../data';
 
 const Offering = () => {
-  const { title, offers, subTitle, textBtn } = offerings;
+  const { offers, subTitle, textBtn } = offerings;
 
   return (
     <div className="bg-custom-black h-full font-poppins py-12">
