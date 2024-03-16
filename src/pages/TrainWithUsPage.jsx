@@ -12,7 +12,7 @@ const TrainWithUsPage = () => {
 
   return (
     <div className="font-poppins">
-      <div className="font-semibold h-[43.7rem]">
+      <div className="font-semibold bg-black h-[800px] w-full">
         <div className="w-full h-full bg-center bg-cover bg-banner2 bg-no-repeat text-white flex items-center justify-center relative">
           <div className="text-white text-center max-container">
             <div className="flex flex-col gap-8 uppercase px-16  max-sm:px-2">

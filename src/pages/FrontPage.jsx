@@ -6,19 +6,19 @@ const FrontPage = () => {
 
   return (
     <div className="font-poppins">
-      <div className="bg-black  h-[700px]">
+      <div className=" bg-black h-[800px] w-full">
         <div className="mx-auto h-full max-lg:p-0">
           <div className="relative w-full h-full bg-center bg-cover changing-background bg-no-repeat flex bg-black max-sm:bg-[-360px] ">
             <div className="w-full max-container uppercase flex justify-center">
-              <div className="flex flex-col text-center items-center justify-center gap-8 max-sm:py-16">
-                <p className="text-shadow text-white text-5xl font-semibold max-sm:text-4xl">
+              <div className="flex flex-col text-center items-center justify-center gap-8 max-sm:py-16 font-semibold ">
+                <p className="text-white text-6xl max-sm:text-4xl text-shadow">
                   <span className="text-custom-gold">TrueFocus </span>
                   Basketball Skills Development
                 </p>
-                <p className="text-custom-gold text-3xl font-semibold text-shadow max-sm:text-2xl max-sm:max-w-[190px]">
+                <p className="text-custom-gold text-3xl max-sm:text-2xl max-sm:max-w-[190px] text-shadow">
                   Real Training, Real Results
                 </p>
-                <p className="max-w-[35rem] text-xl text-white text-shadow max-sm:text-base">
+                <p className="max-w-[80rem] text-3xl text-white max-sm:text-base text-shadow">
                   We deliver intense basketball training in a vibrant and
                   welcoming environment, where serious skills development meets
                   the joy of the game.

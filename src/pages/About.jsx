@@ -3,7 +3,7 @@ import React from 'react';
 const About = () => {
   return (
     <div className="font-poppins">
-      <div className="font-semibold h-[43.7rem]">
+      <div className="font-semibold bg-black h-[800px] w-full">
         <div className="w-full h-full bg-top bg-cover bg-banner3 bg-no-repeat text-white flex relative">
           <div className="max-container text-center justify-center flex flex-col uppercase gap-12">
             <p className="text-shadow text-6xl max-sm:text-4xl">
